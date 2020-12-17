@@ -1,8 +1,18 @@
 # Foot-PoseNet
 
-This is a Keras implementation of a modified version of [PersonLab](https://arxiv.org/abs/1803.08225) for Multi-Person Pose Estimation.
-The model predicts heatmaps and offsets which allow for computation of joint locations. See the paper for more details.
+This is a Keras implementation of a modified version of [PersonLab](https://arxiv.org/abs/1803.08225) called Foot-PoseNet for Multi-Person Pose Estimation.
+The model predicts heatmaps and offsets which allow for computation of 23 joints also known as keypoints, 17 for face and body, and 6 for feet. See the paper for more details.
 
+### Demo
+
+* Download the [model](https://drive.google.com/file/d/1viDeWyRVNwAV6uEw4OcRYrssiSIqSR_a/view?usp=sharing)
+* Run 'python demo.py' to run the demo and visualize the model results
+
+### Result
+
+**Pose**
+
+![pose](https://github.com/BrunoMelicio/FootPoseNet/tree/main/src/demo_results/keypoints_test.jpg.png)
 
 ## Training a model
 If you want to use Resnet101 as the base, first download the imagenet initialization weights from [here](https://drive.google.com/open?id=1ulygah5BTWjhSGGpN20-eYV5NAozdE8Z) and copy it to your `~/.keras/models/` directory.
@@ -35,10 +45,7 @@ This code was tested in the following environment and with the following softwar
 * python-opencv 3.4.1
 
 
-### Demo
 
-* Download the [model](https://www.dropbox.com/sh/nvl39oxwwrzzysx/AADzVaWp4fxBjnnMdaLm8NUya?dl=0)
-* python demo.py to run the demo and visualize the model result
 
 
 ### Training
@@ -59,11 +66,7 @@ This code was tested in the following environment and with the following softwar
 * Run the train.py script
 
 
-### Result
 
-**Pose**
-
-![pose](https://github.com/scnuhealthy/Tensorflow_PersonLab/blob/master/demo_result/pose.jpg)
 
 
 ### Citation
