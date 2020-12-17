@@ -12,7 +12,7 @@ The model predicts heatmaps and offsets which allow for computation of 23 joints
 
 **Pose**
 
-![pose](https://github.com/BrunoMelicio/FootPoseNet/tree/main/src/demo_results/keypoints_test.jpg.png)
+![pose](https://github.com/BrunoMelicio/FootPoseNet/blob/main/src/demo_results/keypoints_test.png)
 
 ## Training a model
 If you want to use Resnet101 as the base, first download the imagenet initialization weights from [here](https://drive.google.com/open?id=1ulygah5BTWjhSGGpN20-eYV5NAozdE8Z) and copy it to your `~/.keras/models/` directory.
