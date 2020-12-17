@@ -122,3 +122,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#code related
+src/models/
+src/dataset/coco2017_personlab_train.h5
+datasets/coco/
+
