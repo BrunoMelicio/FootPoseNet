@@ -14,6 +14,7 @@ The model predicts heatmaps and offsets which allow for computation of 23 joints
 ### Install
 
 * Run 'conda env create -f environment.yml'.
+* Run 'conda activate footposenet'
 
 ### Demo
 

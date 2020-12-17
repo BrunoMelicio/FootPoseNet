@@ -124,7 +124,7 @@ dmypy.json
 .pyre/
 
 #code related
-src/models/
+src/models/foot_posenet_101.h5
 src/dataset/coco2017_personlab_train.h5
 datasets/coco/
 
