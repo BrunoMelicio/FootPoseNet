@@ -13,12 +13,12 @@ The model predicts heatmaps and offsets which allow for computation of 23 joints
 
 ### Install
 
-* Run 'conda env create -f environment.yml'
+* Run 'conda env create -f environment.yml'.
 
 ### Demo
 
-* Download the [model](https://drive.google.com/file/d/1viDeWyRVNwAV6uEw4OcRYrssiSIqSR_a/view?usp=sharing)
-* Run 'python demo.py' to run the demo and visualize the model results
+* Download the [model](https://drive.google.com/file/d/1viDeWyRVNwAV6uEw4OcRYrssiSIqSR_a/view?usp=sharing) and put it inside the `root/src/models` folder.
+* Run 'python demo.py' to run the demo and visualize the results inside `root/src/demo_results`.
 
 ### Result
 
@@ -29,7 +29,7 @@ The model predicts heatmaps and offsets which allow for computation of 23 joints
 
 ### Training
 
-* Download the COCO 2017 dataset and store it in root/datasets
+* Download the COCO 2017 dataset and store it in `root/datasets`.
 
   http://images.cocodataset.org/zips/train2017.zip
 
@@ -37,15 +37,15 @@ The model predicts heatmaps and offsets which allow for computation of 23 joints
 
   http://images.cocodataset.org/annotations/annotations_trainval2017.zip
 
-  training images in `coco2017/train2017/` , val images in `coco2017/val2017/`, training annotations in `coco2017/annotations/`. Set the location of the dataset in the config file.
+  training images in `root/datasets/coco2017/images/train2017/` , val images in `root/datasets/coco2017/images/val2017/`, training annotations in `root/datasets/coco2017/annotations/`. Set the location of the dataset in the config file.
 
-* Generate the training file in the correct format by running 'python generate_hdf5.py'
+* Generate the training file in the correct format by running 'python generate_hdf5.py'.
 
 * If you want to use Resnet101 as the base, first download the imagenet initialization weights from [here](https://drive.google.com/open?id=1ulygah5BTWjhSGGpN20-eYV5NAozdE8Z) and copy it to your `~/.keras/models/` directory.
 
 * Edit the [config.py](config.py) to set options for training, e.g. input resolution, number of GPUs, whether to freeze the batchnorm weights, etc. More advanced options require altering the [train.py](train.py) script. For example, changing the base network can be done by adding an argument to the get_personlab() function.
 
-* Inside root/src, run 'python train.py'
+* Inside root/src, run 'python train.py'.
 
 ## Technical Debts
 Several parts of this codebase are borrowed from [PersonLab Keras](https://github.com/octiapp/KerasPersonLab)
